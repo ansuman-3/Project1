@@ -1,0 +1,79 @@
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100vi;
+    height: 95vb;
+  }
+  .outer-container {
+    width: 15cm;
+    height: 13cm;
+    background-color: rgb(96, 196, 245);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1cm;
+  }
+  .inner-container {
+    background-color: rgb(0, 148, 221);
+    width: 12cm;
+    height: 10cm;
+    border-radius: 1cm;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+  }
+  .inner-container input {
+    width: 8cm;
+    height: 1cm;
+    border-radius: 1cm;
+    border-color: transparent;
+    margin-top: 0.5cm;
+    align-self: center;
+    &::placeholder {
+      position: absolute;
+      left: 15px;
+    }
+  }
+  form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  svg {
+    position: absolute;
+    overlay: none;
+    left: 14.6cm;
+  }
+  button {
+    justify-self: center;
+    margin-top: 0.5cm;
+    width: 4.5cm;
+    height: 0.8cm;
+    background-color: black;
+    color: white;
+    border: transparent;
+  }
+  #google {
+    width: 3.8cm;
+    height: 0.6cm;
+    margin-top: 0.3cm;
+  }
+  #phone {
+    height: 0.75cm;
+    top: 9.6cm;
+  }
+  #email {
+    top: 8cm;
+  }
+  #lock {
+    top: 11.3cm;
+    left: 14.7cm;
+  }
+  #user {
+    height: 2.5cm;
+    position: absolute;
+    top: 2.5cm;
+    left: 18.4cm;
+  }
