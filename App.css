@@ -1,0 +1,1402 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+Link{
+  width: 3.7cm;
+}
+.contain{
+  width: 100vi;
+  height: 100vh;
+}
+.sidebar #logo{
+  position: absolute;
+  width: 1cm;
+  height: 1cm;
+  top: 0.7cm;
+  left: 2.4cm;
+  transition: left 0.3s ease;
+}
+.sidebar{
+  position: absolute;
+  height: 18cm;
+  width: 2cm;
+  border-radius: 20px;
+  background-color: rgb(0, 166, 255);
+  margin-left: -15px;
+  margin-top: -16px;
+  opacity: 0.7;
+  z-index: 2;
+  border: 1px solid black;
+  font-family: sans-serif;
+  transition: width 0.3s ease;
+  &:hover{
+      width: 4cm;
+  }
+  &:hover li{
+      border-radius: 15px;
+  }
+  &:hover #hamburger{
+      transition: transform 0.3s ease;
+      transform: rotate(90deg);
+  }
+  &:hover #home{
+      top: 4.15cm;
+  }
+  &:hover #help{
+      top: 6.35cm;
+  }
+  &:hover #about{
+      top: 8.6cm;
+  }
+  &:hover #customer{
+      top: 10.65cm;
+  }
+  &:hover .sidebar-title{
+      font-size: 14px;
+      margin-top: 0.4cm;
+      margin-left: 0.5cm;
+  }
+  &:hover #logo{
+      left: 4.5cm;
+  }
+}
+.booking-time{
+  width: 5cm;
+  height: 1.5cm;
+  background-color: rgb(0, 166, 255);
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  left: 10%;
+  display: grid;
+  color: white;
+  align-items: center;
+  border-radius: 5px;
+  opacity: 0.7;
+  border: 2px solid rgb(63, 63, 247);
+}
+.booking-time p{
+  margin-left: 5px;
+  width: 3.5cm;
+}
+#booking-btn{
+  position: absolute;
+  top: 9.2cm;
+  left: 10%;
+  height: 1cm;
+  width: 3.65cm;
+  border-radius: 50px;
+  border: 2px solid rgb(63, 63, 247);
+  background-color: rgb(0, 166, 255);
+  opacity: 0.7;
+}
+#booking-btn p{
+  margin-left: -0.55cm;
+  cursor: pointer;
+  color: white;
+}
+.background-img{
+  position: absolute;
+  margin-top: 0%;
+  width: 100%;
+  height: 70%;
+  animation: change 10s infinite ease;
+  background-size:100%;
+}
+@keyframes change{
+  0%{
+      background-image: url(./images/image1.jpg);
+      object-fit: cover;
+  }
+  25%{
+      background-image: url(./images/image2.jpg);
+  }
+  50%{
+      background-image: url(./images/image3.jpg);
+  }
+  75%{
+      background-image: url(./images/image4.jpg);
+  }
+  100%{
+      background-image: url(./images/image1.jpg);
+  }
+}
+.box1,.box2,.box3{
+  width: 9.5cm;
+  height: 5cm;
+  background-color: rgb(0, 166, 255);
+  z-index: 1;
+  display: grid;
+  opacity: 0.5;
+  position: absolute;
+  border-radius: 10px;
+  justify-content: center;
+  line-height: 50px;
+  top: 13cm;
+  border: 2px solid rgb(63, 63, 247);
+  color: whitesmoke;
+  font-weight: 550;
+  font-family: sans-serif;
+  text-shadow: 
+              0.5px 0.5px 0px rgb(56, 56, 56),
+              -0.5px 0.5px 0px rgb(56, 56, 56), 
+              0.5px -0.5px 0px rgb(56, 56, 56), 
+              -0.5px -0.5px 0px rgb(56, 56, 56);
+}
+.box1{
+  left: 5cm;
+}
+.box2{
+  left: 15.5cm;
+}
+.box3{
+  left: 26cm
+}
+.sidebar-list{
+  margin-left: 0.3cm;
+  line-height: 1.8cm;
+  margin-top: 3.2cm;
+  list-style-type: none;
+  text-decoration-line: none;
+  font-size: 15px;
+  cursor: pointer;
+  display: grid;
+}
+#home{
+  position: absolute;
+  z-index: 1;
+  height: 0.65cm;
+  left: 31px;
+  top: 3.65cm;
+  transition: top 0.3s ease;
+}
+svg{
+  position: absolute;
+}
+#help{
+  left: 31px;
+  top: 5.7cm;
+  transition: top 0.3s ease;
+}
+#about{
+  height: 0.55cm;
+  left: 31px;
+  top: 8cm;
+  transition: top 0.3s ease;
+}
+#customer{
+  height: 0.75cm;
+  left: -20px;
+  top: 10.1cm;
+  transition: top 0.3s ease;
+}
+.sidebar-list li{
+  display: grid;
+  border-radius: 15px;
+  justify-items: center;
+  &:hover{
+      background-color: rgb(5, 115, 179);
+      opacity: 0.8;
+  }
+}
+.sidebar-list li .sidebar-title{
+  margin-top: 0.45cm;
+  text-decoration: none;
+  font-weight: 550;
+  color: black;
+}
+.sidebar-list .contact-title{
+  height: 2cm;
+  z-index: 1;
+}
+#hamburger{
+  height: 0.5cm;
+  left: 0.35cm;
+  top: 1cm;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+#hamburger:hover{
+  transform: rotate(90deg);
+}
+.active{
+  background-color: rgb(0, 124, 196);
+}
+#chatbot{
+  position: absolute;
+  height: 1.7cm;
+  top: 92%;
+  right: 2%;
+  cursor: pointer;
+  transition: height,top 0.3s ease;
+  z-index: 2;
+  &:hover{
+      height: 1.8cm;
+      top: 91.5%;
+  }
+}
+.chatbot-text{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  transition: opacity,top 0.3s ease;
+}
+.navbar{
+  width: 9cm;
+  position: absolute;
+  right: 2%;
+  top: 3%;
+  z-index: 1;
+}
+.navbar ul{
+  display: flex;
+  list-style: none;
+}
+.navbar ul li{
+  margin-left: 0.9cm;
+  cursor: pointer;
+}
+.navbar ul li a{
+  text-decoration: none;
+  font-weight: 550;
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 
+              0.5px 0.5px 0px rgb(56, 56, 56),
+              -0.5px 0.5px 0px rgb(56, 56, 56), 
+              0.5px -0.5px 0px rgb(56, 56, 56), 
+              -0.5px -0.5px 0px rgb(56, 56, 56);
+  &:hover{
+      color: gray;
+  }
+}
+.navbar img{
+  height: 1cm;
+  position: absolute;
+  right: 5%;
+  top: -65%;
+  cursor: pointer;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+.contain-help,.contain-contact{
+  width: 33.5cm;
+  height: 11.5cm;
+  background-color: rgb(12, 129, 197);
+  position: absolute;
+  opacity: 0.7;
+  border: 2px solid rgb(45, 45, 235);
+  top: 40%;
+  left: 3cm;
+  border-radius: 20px;
+}
+#doctor-image{
+  height: 9cm;
+  width: 6.5cm;
+  position: absolute;
+  right: 8%;
+  bottom: 10%;
+  opacity: 1;
+  border-radius: 15px;
+  z-index: 1;
+}
+#help-title,#contact-title{
+  position: absolute;
+  left: 10%;
+  color: rgb(12, 129, 197);
+  top: 28%;
+  font-weight: 600;
+  z-index: 1;
+  font-size: 2cm;
+  text-shadow: 
+              0.5px 0.5px 0px rgb(56, 56, 56),
+              -0.5px 0.5px 0px rgb(56, 56, 56), 
+              0.5px -0.5px 0px rgb(56, 56, 56), 
+              -0.5px -0.5px 0px rgb(56, 56, 56);
+}
+#help-content{
+  top: 47%;
+  left: 10%;
+  position: absolute;
+  color: white;
+  width: 24cm;
+  height: 8.5cm;
+  font-weight: 550;
+}
+#help-booking-btn,#about-booking-btn{
+  position: absolute;
+  right: 10%;
+  top: 35%;
+  width: 6cm;
+  height: 0.8cm;
+  border-radius: 15px;
+  color: black;
+  background-color: rgb(12, 129, 197);
+  opacity: 0.88;
+  text-align: start;
+  cursor: pointer;
+  border: 2px solid rgb(45, 45, 235);
+}
+#help-booking-btn p,#about-booking-btn p{
+  margin-left: 15px;
+}
+.contain-about{
+  width: 33.5cm;
+  height: 10cm;
+  background-color: rgb(12, 129, 197);
+  position: absolute;
+  opacity: 0.7;
+  border: 2px solid rgb(45, 45, 235);
+  top: 40%;
+  left: 3cm;
+  border-radius: 20px;
+}
+.about-inner-content{
+  position: absolute;
+  width: 20cm;
+  height: 7cm;
+  background-color: rgb(4, 96, 166);
+  top: 50%;
+  left: 10%;
+  border-radius: 15px;
+  border: 2px solid rgb(45, 45, 235);
+}
+#about-us-img{
+  height: 8cm;
+  width: 8.8cm;
+  position: absolute;
+  object-fit: fill;
+  right: 9%;
+  bottom: 16%;
+  border-radius: 15px;
+}
+#what-we-do,#our-mission,#our-goal{
+  top: 52%;
+  left: 11%;
+  position: absolute;
+  color: white;
+  width: 24cm;
+  height: 8.5cm;
+  font-weight: 550;
+}
+.about-btns{
+  width: 10cm;
+  left: 8%;
+  top: 43%;
+  position: absolute;
+}
+.about-btns button{
+  margin-left: 0.5cm;
+  height: 0.8cm;
+  width: 2.8cm;
+  border-radius: 5px;
+  font-weight: 550;
+  background-color: rgb(26, 135, 219);
+  border: 3px solid rgb(18, 86, 181);
+  cursor: pointer;
+}
+.hide{
+  opacity: 0;
+}
+.show{
+  opacity: 1;
+}
+.contact-content{
+  width: 33.5cm;
+  height: 11.5cm; 
+  position: absolute;
+  top: 40%;
+  left: 3cm;
+}
+.contact-content h1{
+  margin-left: 0.8cm;
+  margin-top: 0.4cm;
+  color: black;
+  text-shadow: 
+              0.5px 0.5px 0px rgb(56, 56, 56),
+              -0.5px 0.5px 0px rgb(56, 56, 56), 
+              0.5px -0.5px 0px rgb(56, 56, 56), 
+              -0.5px -0.5px 0px rgb(56, 56, 56);
+}
+#contact-info{
+  margin-left: 0.8cm;
+  margin-top: 0.4cm;
+}
+#contact-para-1{
+  left: 4%;
+  width: 8cm;
+}
+#contact-para-2{
+  left: 30%;
+}
+#contact-para-3{
+  left: 50%;
+}
+#contact-para-4{
+  right: 20%;
+}
+#contact-para-1,#contact-para-2,#contact-para-3,#contact-para-4{
+  position: absolute;
+  display: flex;
+  top: 15%;
+  color: white;
+  text-shadow: 
+              0.5px 0.5px 0px rgb(56, 56, 56),
+              -0.5px 0.5px 0px rgb(56, 56, 56), 
+              0.5px -0.5px 0px rgb(56, 56, 56), 
+              -0.5px -0.5px 0px rgb(56, 56, 56);
+}
+#contact-para-1 h4{
+  width: 3cm;
+}
+#contact-query{
+  position: absolute;
+  top: 25%;
+  left: 1cm;
+}
+.contact-input{
+  width: 18cm;
+  height: 8cm;
+  position: absolute;
+  bottom: 0;
+}
+.contact-input input{
+  width: 15cm;
+  height: 1cm;
+  position: absolute;
+  top: 30%;
+  left: 1cm;
+  padding-left: 10px;
+  &::placeholder{
+    font-weight: 550;
+    color: black;
+  }
+}
+.contact-input #first-input{
+  top: 13%;
+}
+.contact-input #second-input{
+  top: 30%;
+}
+.contact-input #third-input{
+  top: 47%;
+  height: 3.5cm;
+}
+#send-message{
+  position: absolute;
+  bottom: 12%;
+  left: 10%;
+  height: 0.9cm;
+  width: 3cm;
+  border-radius: 5px;
+}
+#subject{
+  position: absolute;
+  bottom: 38%;
+  z-index: 1;
+  left: 8%;
+}
+#query-img{
+  height: 8cm;
+  width: 8cm;
+  right: 10%;
+  bottom: 8%;
+  position: absolute;
+  border-radius: 15px;
+}
+.login,.booking{
+  height: 100vb;
+  width: 100vi;
+  position: absolute;
+  background-color: rgb(217, 238, 242);
+  z-index: 1;
+  margin-top: -1.5%;
+  display: grid;
+}
+.login-content{
+  position: absolute;
+  z-index: 1;
+  width: 12cm;
+  height: 8cm;
+  border-radius: 5px;
+  border: 2px solid black;
+  align-self: center;
+  justify-self: center;
+  background-color: white;
+  display: grid;
+  border-radius: 15px;
+}
+.login-inner-content{
+  width: 10cm;
+  height: 6cm;
+  border: 2px solid rgb(1, 68, 192);
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  display: grid;
+  background-color: rgb(45, 155, 240);
+  border-radius: 15px;
+  opacity: 0.9;
+}
+.login-inner-content form{
+  position: absolute;
+  justify-self: left;
+  justify-items: center;
+  display: grid;
+  width: 10cm;
+}
+.login-inner-content form input{
+  width: 7cm;
+  height: 0.8cm;
+  border-radius: 17px;
+  margin-top: 0.7cm;
+  position: absolute;
+  padding-left: 10px;
+}
+#login-user{
+  top: 1cm;
+}
+#login-pass{
+  top: 1.5cm;
+}
+.login-inner-content #login-content-button{
+  position: absolute;
+  top: 3.65cm;
+  width: 5cm;
+  height: 0.7cm;
+  font-weight: 550;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#forgot-pass,#login-register{
+  justify-self: center;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: smaller;
+  margin-right: 0.4cm;
+  &:hover{
+    color: rgb(211, 233, 229);
+  }
+}
+#login-register{
+  bottom: 5%;
+}
+#welcome-msg{
+  justify-self: center;
+  font-weight: 600;
+  font-size: 1.1cm;
+  top: 3cm;
+  position: absolute;
+}
+.login-user-img{
+  height: 1.5cm;
+  justify-self: center;
+  position: absolute;
+  top: 5.4cm;
+  z-index: 2;
+  display: none;
+}
+.login-extra{
+  position: absolute;
+  justify-self: center;
+  display: flex;
+  width: 10cm;
+  height: 1cm;
+  bottom: 0%;
+  left: 25%;
+}
+.login-inner-content form #email{
+  top: 0.85cm;
+  z-index: 1;
+  left: 0.6cm;
+
+}
+.login-inner-content form #lock{
+  top: 2.35cm;
+  z-index: 1;
+  left: 0.6cm;
+}
+.login-as{
+  display: grid;
+}
+.show-login{
+  display: block;
+}
+.show-login{
+  display: none;
+}
+.login-as-inner{
+  width: 8.7cm;
+  background-color: rgb(29, 125, 251);
+  border-radius: 15px;
+  opacity: 0.8;
+  height: 5cm;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+}
+#Login-to-Patient-portal,#Login-to-Medco-portal{
+  width: 6cm;
+  height: 1cm;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+  margin-left: 1.5cm;
+  margin-top: 0.5cm;
+}
+#company-logo{
+  position: absolute;
+  width: 1cm;
+  height: 1cm;
+  top: 0.7cm;
+  z-index: 2;
+  left: 0.7cm;
+}
+.contain-signin {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100vb;
+  margin-top: -0.5cm;
+  width: 100vi;
+  z-index: 1;
+  background-color: white;
+}
+.outer-container-signin {
+  width: 15cm;
+  height: 13cm;
+  background-color: rgb(96, 196, 245);
+  display: grid;
+  align-items: center;
+  border-radius: 1cm;
+}
+.inner-container-signin {
+  background-color: rgb(0, 148, 221);
+  position: absolute;
+  width: 12cm;
+  height: 10cm;
+  border-radius: 1cm;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+.inner-container-signin input {
+  width: 8cm;
+  height: 1cm;
+  border-radius: 1cm;
+  border-color: transparent;
+  margin-top: 0.5cm;
+  align-self: center;
+  padding-left: 15px;
+}
+.contain-signin form {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.inner-contain-signin svg {
+  position: absolute;
+}
+.inner-contain-signin button {
+  justify-self: center;
+  margin-top: 0.5cm;
+  width: 4.5cm;
+  height: 0.8cm;
+  background-color: black;
+  color: white;
+  border: transparent;
+}
+#signin-phone {
+  height: 0.75cm;
+  top: 4.85cm;
+  left: 0.9cm;
+}
+#signin-email {
+  top: 3.3cm;
+  left: 0.9cm;
+}
+#signin-lock {
+  top: 6.5cm;
+  left: 1cm;
+}
+#sign-user{
+  position: absolute;
+  height: 2.5cm;
+  top: 2.2cm;
+  justify-self: center;
+  z-index: 2;
+  left: 18.4cm;
+}
+#signin-button{
+  position: absolute;
+  bottom: 10%;
+  width: 4cm;
+  height: 0.8cm;
+  border-radius: 5px;
+}
+.booking-content{
+  width: 99%;
+  height: 70%;
+  background-color: rgb(3, 98, 145);
+  border: 3px solid rgb(0, 59, 130);
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  border-radius: 5px;
+}
+.booking-inner-content{
+  width: 50%;
+  height: 80%;
+  background-color: rgb(3, 131, 186);
+  border: 2px solid rgb(1, 47, 100);
+  justify-self: center;
+  align-self: center;
+  border-radius: 5px;
+  display: grid flex;
+}
+#booking-location,#search-hospital,#patient-name,#booking-age,#booking-gender,#booking-date,#booking-time,#booking-department,#booking-doctor,#booking-desc{
+  position: absolute;
+  height: 1cm;
+  border-radius: 5px;
+  left: 34%;
+  margin-top: 0.5cm;
+  padding-left: 15px;
+}
+#booking-desc{
+  width: 12cm;
+  height: 2.5cm;
+  border: 1px solid black;
+  justify-self: center;
+  top: 55%;
+}
+#booking-doctor{
+  top: 49%;
+  width: 12.5cm;
+}
+#booking-department{
+  width: 12.5cm;
+  top: 43%;
+}
+#booking-age{
+  top: 36%;
+  width: 1.5cm;
+}
+#booking-gender{
+  top: 36%;
+  width: 2.5cm;
+  left: 39.3%;
+  height: 1.1cm;
+}
+#booking-date{
+  top: 36%;
+  width: 3.8cm;
+  left: 45.8%;
+}
+#booking-time{
+  top: 36%;
+  left: 57%;
+  width: 3cm;
+}
+#patient-name{
+  width: 12cm;
+  top: 30%;
+}
+#search-hospital{
+  left: 50.5%;
+  width: 5.4cm;
+  border-radius: 50px;
+}
+#booking-location{
+  width: 5.3cm;
+  padding-left: 32px;
+}
+#location{
+  height: 1cm;
+  position: absolute;
+  left: 31%;
+  z-index: 1;
+  top: 24.6%;
+}
+#search{
+  right: 47%;
+  top: 24.9%;
+  height: 0.8cm;
+  position: absolute;
+  z-index: 1;
+}
+#search-hospital{
+  padding-left: 35px;
+}
+#booking-title,#booking-sub-title{
+  position: absolute;
+  justify-self: center;
+}
+#booking-title{
+  top: 5%;
+}
+#booking-sub-title{
+  top: 9.6%;
+}
+#booking-appointment{
+  position: absolute;
+  left: 37%;
+  bottom: 25%;
+  width: 10cm;
+  height: 1cm;
+  border-radius: 15px;
+  background-color: rgb(0, 145, 255);
+  cursor: pointer;
+}
+.profile-content{
+  width: 100vi;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  display: grid;
+}
+.profile-outer-content{
+  width: 30cm;
+  height: 20cm;
+  background-color: rgb(2, 135, 192);
+  justify-self: center;
+  align-self: center;
+  border-radius: 20px;
+}
+#patient-profile{
+  position: absolute;
+  top: 5%;
+  left: 15%;
+}
+.profile-details{
+  width: 35%;
+  height: 6.5cm;
+  border-radius: 20px;
+  margin-left: 1cm;
+  margin-top: 1.2cm;
+  border: 2px solid rgb(0, 34, 42);
+}
+#user-profile-img{
+  height: 1cm;
+  margin-top: 0.5cm;
+  margin-left: 0.5cm;
+}
+#back{
+  height: 0.5cm;
+  position: absolute;
+  left: 5cm;
+  top: 1.1cm;
+  cursor: pointer;
+}
+#profile-pronounce{
+  left: 7.3cm;
+}
+.profile-inner-content h4{
+  position: absolute;
+  top: 2.5cm;
+  left: 8cm;
+}
+.profile-inner-content #three-dot li{
+  position: absolute;
+  left: 14.8cm;
+  top: 2.8cm;
+  z-index: 2;
+  background-color: gray;
+  width: 2cm;
+  height: 1cm;
+  text-align: center;
+  justify-self: center;
+  font-weight: 600;
+  &:hover{
+    background-color:antiquewhite;
+  }
+}
+.profile-inner-content ul li p{
+  margin-top: 10%;
+  cursor: pointer;
+}
+#dots-menu{
+  height: 1cm;
+  left: 13.4cm;
+  top: 2cm;
+  cursor: pointer;
+}
+.profile-details h3{
+  position: absolute;
+  left: 17%;
+  top: 17%;
+}
+#profile-phone{
+  height: 0.65cm;
+  top: 22%;
+}
+#profile-email-logo{
+  top: 27%;
+}
+#profile-home{
+  height: 0.7cm;
+  position: absolute;
+  top: 32%;
+}
+#profile-number,#profile-email,#profile-address{
+  position: absolute;
+  left: 20%;
+}
+#profile-number{
+  top: 22.5%;
+}
+#profile-email{
+  top: 27.5%;
+}
+#profile-address{
+  top: 32.5%;
+  width: 8cm;
+  height: 1.35cm;
+  display: flex;
+}
+.overview{
+  position: absolute;
+  border: 2px solid rgb(0, 34, 42);
+  width: 14cm;
+  height: 4cm;
+  right: 14%;
+  top: 9%;
+  border-radius: 15px;
+}
+.overview h3{
+  margin-left: 0.4cm;
+  margin-top: 0.5cm;
+}
+.overview div{
+  position: absolute;
+  font-weight: 550;
+}
+.overview div h5{
+  margin-left: 0.2cm;
+  background-color: rgb(0, 221, 255);
+  padding-left: 0.15cm;
+}
+#profile-gender{
+  display: block;
+  top: 29%;
+  left: 10%;
+}
+#profile-DOB{
+  display: block;
+  top: 29%;
+  left: 26%;
+}
+#profile-DOB h5{
+  padding-left:0.35cm ;
+}
+#profile-age{
+  display: block;
+  top: 29%;
+  left: 50%;
+}
+#profile-age h5{
+  padding-left: 2%;
+}
+#profile-marital-status{
+  display: block;
+  top: 29%;
+  left: 62%;
+}
+#profile-marital-status h5{
+  padding-left: 0.5cm;
+}
+#profile-previous-visit{
+  display: block;
+  top: 60%;
+  left: 10%;
+}
+#profile-previous-visit h5{
+  padding-left: 0.35cm;
+}
+#profile-next-visit{
+  display: block;
+  top: 60%;
+  left: 37%;
+}
+#profile-blood-type{
+  display: block;
+  top: 60%;
+  right: 28%;
+}
+#profile-blood-type h5{
+  padding-left: 0.8cm;
+}
+.documents-report{
+  width: 35%;
+  height: 10cm;
+  border-radius: 15px;
+  margin-left: 1cm;
+  margin-top: 1.2cm;
+  border: 2px solid rgb(0, 34, 42);
+  display: grid;
+}
+.documents-report h3{
+  position: absolute;
+  left: 17%;
+  bottom: 46%;
+  width: 6cm;
+}
+.documents-report #documents-menu{
+  position: absolute;
+  height: 8cm;
+  align-content: center;
+  justify-self: center;
+  list-style: none;
+  margin-top: 1.7cm;
+  margin-left: 0.5cm;
+}
+#documents-menu ul{
+  justify-self: center;
+}
+#documents-menu li{
+  height: 2cm;
+  width: 7cm;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
+  margin-left: 0.4cm;
+  font-weight: 550;
+  &:hover{
+    background-color: rgb(163, 164, 164);
+    cursor: pointer;
+  }
+}
+#document{
+  margin-top: 0.2cm;
+}
+#document-upload{
+  height: 1cm;
+  width: 3cm;
+  bottom: 2cm;
+  margin-left: 2cm;
+  position: absolute;
+  cursor: pointer;
+}
+#upload{
+  margin-left: -24%;
+}
+#view-all{
+  bottom: 2.3cm;
+  position: absolute;
+  left: 11.5cm;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.patient-history{
+  position: absolute;
+  border: 2px solid rgb(0, 34, 42);
+  width: 16cm;
+  height: 13cm;
+  right: 14%;
+  top: 32%;
+  border-radius: 15px;
+  display: grid;
+}
+.patient-history h3{
+  margin-left: 0.4cm;
+  margin-top: 0.5cm;
+}
+.history-list{
+  display: flex;
+}
+#history-list1,#history-list2{
+  width: 14cm;
+  height: 10cm;
+  list-style: none;
+}
+#history-list1 li,#history-list2 li{
+  width: 7cm;
+  height: 2cm;
+  margin: 0.5cm;
+  justify-content: center;
+  display: grid;
+  align-content: center;
+  &:hover{
+    background-color: rgb(163, 164, 164);
+  }
+}
+#history-list1{
+  position: absolute;
+  right: 9%;
+  top: 9%;
+}
+.history-list li svg{
+  height: 1cm;
+  right: 0;
+}
+#history-list2{
+  position: absolute;
+  left: 7%;
+  top: 9%;
+  margin-left: 7cm;
+}
+#history-list2 li:hover{
+  background-color: rgb(163, 164, 164);
+}
+.medco-bg{
+  background-image: url("./images/Pg1-bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  /* opacity: 0.45; */
+  /* filter: saturate(2.5); */
+  position: relative;
+  display: grid;
+}
+
+.medco-text{
+  /* display: flex; */
+  /* justify-items: center; */
+  padding: 11px 10px 10px 4px;
+  margin: 15px 21px 15px 0px;
+  position: absolute;
+  justify-self: center;
+  top: 5cm;
+  font-size: 44px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background: #fae7e736;
+}
+
+.medco-button{
+  padding: 17px 86px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  column-gap: 33px;
+}
+.medco-btn {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(to top left,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2) 30%,
+          rgba(0, 0, 0, 0));
+  box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.medco-btn:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.medco-btn:active {
+  box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+#manage-body {
+  height: 100vh;
+  width: 100vi;
+  background-image: url("./images/Pg2,3-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -2.55cm;
+  backdrop-filter: blur(1px);
+}
+
+.contain-inventory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 9cm;
+  margin: 100px 374px;
+  padding: 49px;
+  position: relative;
+  z-index: 7;
+}
+
+.contain-inventory div {
+  justify-items: center;
+  flex-basis: 172px;
+  height: 120px;
+  /* background-color: #cae165dc; */
+  margin: 17px;
+  padding: 12px;
+  border-radius: 33px;
+}
+
+.manage-btn {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(1 177 87);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.manage-btn:hover {
+  background-color: rgb(11, 235, 119);
+  cursor: pointer;
+}
+
+.manage-btn:active {
+  box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.Stock {
+  padding: 2px 7px;
+  margin: -7px;
+  line-height: 1.6;
+}
+
+.Upd {
+  padding: 16px 4px;
+  line-height: 1.1;
+}
+
+.Expiry {
+  padding: 8px 9px;
+  margin: -4px;
+  line-height: 1.1;
+}
+
+.manage-order {
+  padding: 10px 47px 10px 47px;
+  line-height: 1.87;
+}
+#order-body {
+  background-image: url("./images/Pg2,3-bg.jpg");
+  height: 100vh;
+  width: 100vi;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(1px);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.order-box {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #ffffffe8;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  width: 570px;
+  display: grid;
+}
+.order-box form{
+  justify-self: center;
+  align-self: center;
+  display: grid;
+}
+
+.order-box h2 {
+  color: #21cdd3;
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 8px;
+  text-align: center;
+  border: 1px dashed #21cdd3;
+}
+
+.input_group {
+  margin-top: 10px;
+  margin-bottom: 33px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 14px 0px;
+}
+
+.input_box {
+  width: 100%;
+  margin-right: 12px;
+  position: relative;
+}
+
+.input_box .med-name:focus,
+.Quantity:focus,
+.business-add:focus {
+  -webkit-box-shadow: 0 0 2px 1px #21cdd3;
+  -moz-box-shadow: 0 0 2px 1px #21cdd3;
+  box-shadow: 0 0 2px 1px #21cdd3;
+  border: 1px solid #21cdd3;
+}
+
+.med-name,
+.Quantity,
+.business-add {
+  width: 40%;
+  /* padding: 14px; */
+  text-align: center;
+  background-color: #fcfcfc;
+  transition: 0.3s;
+  outline: none;
+  border: 1px solid #c0bfbf;
+  border-radius: 3px;
+}
+
+.med-name {
+  padding: 12px;
+  margin: 12px;
+}
+
+.Quantity {
+  padding: 12px;
+  margin: 12px;
+}
+
+.business-add {
+  padding: 12px;
+  margin: 12px;
+}
+
+.order-btn {
+  border: 0;
+  line-height: 2.5;
+  padding: 5px 18px 5px 18px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+  justify-self:center ;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: #21cdd3;
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.order-btn:hover {
+  background-color: #03f7ff;
+}
+
+.order-btn:active {
+  box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
